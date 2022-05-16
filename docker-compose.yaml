@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  recipes:
+    build:
+      context: .
+      dockerfile: RecipesAPI/Dockerfile
+    ports:
+      - "9093:9093"
+  ingredients:
+    build:
+      context: .
+      dockerfile: IngredientsAPI/Dockerfile
+    ports:
+      - "9092:9092"
+  cooks:
+    build:
+      context: .
+      dockerfile: CooksAPI/Dockerfile
+    ports:
+      - "9091:9091"
