@@ -19,6 +19,6 @@ COPY --from=builder ${DEPENDENCY}/BOOT-INF/classes /app
 
 EXPOSE 9093
 
-ENTRYPOINT ["java","-cp","app:/app/lib/*","nl.openvalue.paulienvanalst.ingredients.RecipesApplicationKt"]
+ENTRYPOINT ["java","-cp","app:/app/lib/*","nl.openvalue.paulienvanalst.recipes.RecipesApplicationKt"]
 
 

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 class RecipesController {
 
     @GetMapping(
-        consumes = [MediaType.APPLICATION_JSON_VALUE],
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
     fun retrieveIngredients(): List<Recipe> {
